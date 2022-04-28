@@ -1,0 +1,86 @@
+@use '../../assets/sass/_variables.scss' as *;
+.current-email {
+  padding: 70px;
+  
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .header-name {
+     display: flex;
+     align-items: center;
+     font-size: 1rem;
+     font-weight: 400;
+      
+      i {
+        font-size: 50px;
+        margin-right: 50px;
+        color: $primary-darkblue;
+      }
+      .sender-name {
+        color: $primary-blue;
+        
+        font-weight: 700;
+
+      }
+      .sender-emailid {
+        color: $primary-grey;
+      }
+    }
+    
+    .header-icons {
+      span {
+        // font-size: px;
+        margin-left: 10px;
+        // padding: 10px;
+        // border-radius: 50%;
+        // border: 1px solid $primary-blue;
+        // color: $primary-blue;
+        // background-color: $secondary-active;
+        cursor: pointer;
+      }
+      
+    }
+  }
+
+  &__body {
+    margin-top: 50px;
+    font-size: 1rem;
+    font-weight: 400;
+
+    .subject {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: $primary-darkblue;
+    }
+    
+    .content {
+      color: $primary-grey;
+    }
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 50px;
+    span {
+      margin-right: 10px;
+      padding: 10px;
+      border: 1px solid $border-color;
+      cursor: pointer;
+      color: $primary-grey;
+    }
+  }
+  .no-currentMail {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    color: $primary-darkblue;
+  }
+}

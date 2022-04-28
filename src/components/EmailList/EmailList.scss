@@ -1,0 +1,43 @@
+@use '../../assets/sass/_variables.scss' as *;
+
+.email-list {
+  border-right: 1px solid $border-color;
+  min-height: 100vh;
+  
+  .inbox-filter {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      padding: 10px 20px;
+      background-color: white;
+      border: 1px solid $border-color;
+    }
+    .compose-btn {
+      background-color: $primary-blue;
+      color: white;
+      border: none;
+    }
+    .filter-btn {
+      cursor: pointer;
+      img {
+        margin-left: 5px;
+      }
+    }
+  }
+  .mapped-mails {
+    height: calc(100vh - 50px);
+    overflow: scroll;
+  }
+  .no-mails {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    color: $primary-darkblue;
+  }
+}

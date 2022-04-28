@@ -1,0 +1,12 @@
+.filter-item {
+  margin-bottom: 10px;
+  > label {
+    margin-left: 10px;
+  }
+  input {
+    cursor: pointer;
+  }
+}
+.hide {
+  display: none;
+}

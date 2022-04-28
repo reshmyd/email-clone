@@ -1,0 +1,13 @@
+@use './assets/sass/_variables.scss' as *;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+ 
+}
+main {
+ 
+  display: grid;
+  grid-template-columns: 320px 1fr;
+}

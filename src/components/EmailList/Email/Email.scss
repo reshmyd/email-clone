@@ -1,0 +1,48 @@
+@use '../../../assets/sass/variables.scss' as *;
+
+.email {
+  cursor: pointer;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-auto-rows: 115px;
+  border: 1px solid $border-color;
+  border-bottom: none;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .sender-name {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: $primary-grey;
+    }
+    .email-subject {
+      font-size: 1rem;
+      color: $primary-darkblue;
+    }
+    .email-body {
+      font-size: 0.8rem;
+      
+      letter-spacing: 160%;
+      color: $primary-grey;
+    }
+  }
+  i {
+    font-size: 35px;
+    color: $primary-darkblue;
+  }
+  
+  
+}
+.unread {
+  background-color: $secondary-active;
+  border-right: 3px solid $primary-blue;
+  .email__content {
+    .email-subject {
+      font-weight: 700;
+    }
+
+  }
+}

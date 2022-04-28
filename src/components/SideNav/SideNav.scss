@@ -1,0 +1,33 @@
+@use '../../assets/sass/_variables.scss' as *;
+
+.side-nav {
+  padding: 50px 25px;
+  border-right: 1px solid $border-color;
+  text-align: center;
+  min-height: 100vh;
+  div {
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    cursor: pointer;
+    color: $secondary-inactive-tab;
+    i {
+      margin-right: 10px;
+      color: $primary-blue;
+    }
+    p {
+      color: $primary-blue;
+
+    }
+    
+  }
+  .active {
+    color: $primary-darkblue;
+    background-color: $secondary-active;
+  }
+}
